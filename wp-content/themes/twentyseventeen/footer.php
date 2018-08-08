@@ -14,34 +14,98 @@
 
 ?>
 
-		</div><!-- #content -->
+		    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row list-footer-container">
+              <div class="col-sm-4 footer-item-content">
+                <h4>Seeds</h4>
+                <ul class="list-footer">
+                  <li class="list-footer-item">
+                    <a href="#">Sign Up</a>
+                  </li>
+                  <li class="list-footer-item">
+                    <a href="#">Plans &amp; Pricing</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 footer-item-content">
+                <h4>Company</h4>
+                <ul class="list-footer">
+                  <li class="list-footer-item">
+                    <a href="#">About Us</a>
+                  </li>
+                  <li class="list-footer-item">
+                    <a href="#">Terms &amp; Privacy</a>
+                  </li>
+                  <li class="list-footer-item">
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li class="list-footer-item">
+                    <a href="#">Help</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 footer-item-content">
+                <h4>Follow Us</h4>
+                <div class="copyright-container">
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-logo-container text-center">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets-child/img/footer-logo.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="wrap">
-				<?php
-				get_template_part( 'template-parts/footer/footer', 'widgets' );
+  <div class="scroll-top-wrapper">
+    <a class="scroll-top js-scroll-trigger" href="#page-top"><i class="fa fa-angle-up"></i></a>
+  </div>
 
-				if ( has_nav_menu( 'social' ) ) : ?>
-					<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentyseventeen' ); ?>">
-						<?php
-							wp_nav_menu( array(
-								'theme_location' => 'social',
-								'menu_class'     => 'social-links-menu',
-								'depth'          => 1,
-								'link_before'    => '<span class="screen-reader-text">',
-								'link_after'     => '</span>' . twentyseventeen_get_svg( array( 'icon' => 'chain' ) ),
-							) );
-						?>
-					</nav><!-- .social-navigation -->
-				<?php endif;
+  <!-- Plugin JavaScript -->
+  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/vendor/images-gallery/masonry.pkgd.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/vendor/images-gallery/imagesloaded.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/vendor/images-gallery/classie.js"></script>
+  <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets-child/vendor/images-gallery/AnimOnScroll.js"></script> -->
 
-				get_template_part( 'template-parts/footer/site', 'info' );
-				?>
-			</div><!-- .wrap -->
-		</footer><!-- #colophon -->
-	</div><!-- .site-content-contain -->
-</div><!-- #page -->
-<?php wp_footer(); ?>
+  <!-- Contact form JavaScript -->
+  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/js/jqBootstrapValidation.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/js/contact_me.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/js/wow.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/js/jquery.lazy.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/js/scripts.min.js"></script>
 
 </body>
+
 </html>
