@@ -24,10 +24,13 @@
                 <h4>Seeds</h4>
                 <ul class="list-footer">
                   <li class="list-footer-item">
-                    <a href="#">Sign Up</a>
+                    <a href="<?php echo esc_url( home_url( '/white-paper' ) ); ?>">White Paper</a>
                   </li>
                   <li class="list-footer-item">
-                    <a href="#">Plans &amp; Pricing</a>
+                    <a href="<?php echo esc_url( home_url( '/gallery' ) ); ?>">Gallery</a>
+                  </li>
+                  <li class="list-footer-item">
+                    <a href="<?php echo esc_url( home_url( '/documentation' ) ); ?>">Documentation</a>
                   </li>
                 </ul>
               </div>
@@ -35,13 +38,13 @@
                 <h4>Company</h4>
                 <ul class="list-footer">
                   <li class="list-footer-item">
-                    <a href="#">About Us</a>
+                    <a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>">About Us</a>
                   </li>
                   <li class="list-footer-item">
                     <a href="#">Terms &amp; Privacy</a>
                   </li>
                   <li class="list-footer-item">
-                    <a href="#">Contact Us</a>
+                    <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact Us</a>
                   </li>
                   <li class="list-footer-item">
                     <a href="#">Help</a>

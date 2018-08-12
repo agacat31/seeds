@@ -72,25 +72,20 @@
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">White Paper</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Documentation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+        <?php
+		   wp_nav_menu([
+		     'menu'            => 'top',
+		     'theme_location'  => 'top',
+		     'container'       => 'div',
+		     'container_id'    => 'navbarResponsive',
+		     'container_class' => 'collapse navbar-collapse',
+		     'menu_id'         => false,
+		     'menu_class'      => 'navbar-nav ml-auto',
+		     'depth'           => 2,
+		     'fallback_cb'     => 'bs4navwalker::fallback',
+		     'walker'          => new bs4navwalker()
+		   ]);
+		   ?>
       </div>
     </nav>
 
