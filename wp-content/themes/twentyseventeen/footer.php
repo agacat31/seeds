@@ -97,10 +97,6 @@
   <script src="<?php echo get_template_directory_uri(); ?>/assets-child/vendor/images-gallery/classie.js"></script>
   <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets-child/vendor/images-gallery/AnimOnScroll.js"></script> -->
 
-  <!-- Contact form JavaScript -->
-  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/js/jqBootstrapValidation.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/assets-child/js/contact_me.js"></script>
-
   <!-- Custom scripts -->
   <script src="<?php echo get_template_directory_uri(); ?>/assets-child/js/wow.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets-child/js/jquery.lazy.min.js"></script>
