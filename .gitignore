@@ -1,28 +1,4 @@
-# FastShell
-# https://HosseinKarami.github.io/fastshell
-# @author Hossein Karami
-
-
-## Node.js
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-pids
-logs
-results
-npm-debug.log
-node_modules
-
-## Bower
-src/components
-
-## Sass
-.sass-cache
+wp-content/uploads
 
 ## OS X
 .DS_Store
