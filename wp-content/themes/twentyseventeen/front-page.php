@@ -124,7 +124,7 @@ get_header(); ?>
         <!-- <h3 class="section-subheading text-muted">Only with one click you can finish your work faster.</h3> -->
       </div>
     </div>
-    <div class="row text-center">
+    <!-- <div class="row text-center">
       <div class="col-md-4">
         <div class="view view-first wow fadeInUp" data-wow-delay="0.2s">
             <img src="<?php echo get_template_directory_uri(); ?>/assets-child/img/coffe-1.jpg" class="img-fluid" />
@@ -191,7 +191,14 @@ get_header(); ?>
         <br><br>
         <a class="btn btn-primary btn-xs text-uppercase btn-main wow fadeInUp" data-wow-delay="0.5s" href="#">Browse For More</a>
       </div>
-    </div>
+    </div> -->
+    <?php
+      while ( have_posts() ) : the_post();
+
+        get_template_part( 'template-parts/page/content', 'page' );
+
+      endwhile; // End of the loop.
+      ?>
   </div>
 </div>
 
