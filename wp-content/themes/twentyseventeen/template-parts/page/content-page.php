@@ -16,7 +16,7 @@
 	<div class="row">
 		<div class="col-sm-8 offset-sm-2">
 			<div class="article-wrapper">
-				<?php the_title( '<h1 class="">', '</h1>' ); ?>
+				<?php the_title( '<h1 class="header-page">', '</h1>' ); ?>
 				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 				<?php
 					the_content();
