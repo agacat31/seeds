@@ -93,6 +93,8 @@
     <a class="scroll-top js-scroll-trigger" href="#page-top"><i class="fa fa-angle-up"></i></a>
   </div>
 
+  <?php wp_footer(); ?>
+
   <!-- Plugin JavaScript -->
   <script src="<?php echo get_template_directory_uri(); ?>/assets-child/vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets-child/vendor/images-gallery/masonry.pkgd.min.js"></script>

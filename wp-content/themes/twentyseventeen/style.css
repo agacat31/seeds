@@ -1641,7 +1641,8 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 
 .twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
-	border-top: 1px solid #ddd;
+	/* border-top: 1px solid #ddd; */
+	padding-top: 20px;
 }
 
 .panel-content {

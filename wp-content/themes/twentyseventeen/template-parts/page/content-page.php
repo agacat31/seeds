@@ -14,7 +14,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="row">
-		<div class="col-sm-8 offset-sm-2">
+		<div class="col-sm-10 offset-sm-1">
 			<div class="article-wrapper">
 				<?php the_title( '<h1 class="header-page">', '</h1>' ); ?>
 				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
